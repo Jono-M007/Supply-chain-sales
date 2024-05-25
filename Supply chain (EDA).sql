@@ -46,7 +46,7 @@ FROM supply
 GROUP BY product_id
 ORDER BY units_revenue DESC;
 
--- Which product generates the highest profit margin ?
+-- Which product generates the highest gross profit ?
 SELECT product_id, SUM(gross_margin) AS unit_margin
 FROM supply
 GROUP BY product_id
